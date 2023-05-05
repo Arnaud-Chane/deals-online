@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function CardGame({ data }) {
   return (
     <div className="CardGame">
@@ -7,3 +9,11 @@ export default function CardGame({ data }) {
     </div>
   );
 }
+
+CardGame.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string,
+    normalPrice: PropTypes.number,
+    thumb: PropTypes.string,
+  }).isRequired,
+};
