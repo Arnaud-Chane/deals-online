@@ -1,0 +1,13 @@
+$bg-color-navbar: #000000;
+
+
+.Navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $bg-color-navbar;
+}
+

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import getDeals from "../API/DataDeals";
 
 import CardGame from "../components/CardGame";
+import Navbar from "../components/Navbar";
 
 function Home() {
   const [deals, setDeals] = useState([]);
@@ -17,6 +18,9 @@ function Home() {
   return (
     <div className="App-header">
       <div className="header-home">
+        <div className="navbar-home">
+          <Navbar />
+        </div>
         {deals.map((deal, i) => (
           <CardGame data={deal} key={[i]} />
         ))}
