@@ -1,11 +1,11 @@
-.Home{
+.Home {
   display: flex;
   flex-direction: column;
   margin: 5%;
   border: 1px black solid;
 }
 
-.title-container{
+.title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,11 +13,21 @@
   border: 1px green solid;
   margin: 1rem;
   padding: 1%;
+  .title{
+    text-align: center;
+  }
 }
 
-.title-links{
+.title-descr {
+  display: flex;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.title-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px blue solid;
   width: 100%;
 
@@ -26,53 +36,63 @@
   }
 }
 
-.main-img{
+.main-img {
   border: 1px grey solid;
   margin: 5% 0;
 
-  img{
+  img {
     width: 100%;
   }
 }
 
-.main-img-note{
+.main-img-note {
   margin: 5% 0;
 }
 
-.main-para-ctn div{
+.main-para-ctn div {
   margin: 5% 0;
 }
 
 .btn {
   display: flex;
   align-items: center;
+  padding: 3%;
+  border: 1px solid black;
+  width: fit-content;
   a * {
     align-items: center;
     justify-content: center;
   }
 }
 
+.btn-a{
+  background-color: yellow;
+}
+
+.btn-audible{
+  background-color: orange;
+}
+
+@media screen and (min-width: 769px) {
+
+  .main-content{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+  }
+
+  .main-img {
+    margin: 5% 0;
+    flex: 1;
+  }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
