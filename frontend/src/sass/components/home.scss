@@ -1,0 +1,146 @@
+@use '../mixins' as *;
+
+.Home {
+  @include border(black);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-ctn{
+  @include border(red);
+  background-color: #bd86d9;
+  height: 100vh;
+  padding: 10%;
+}
+
+.nav-logo{
+  @include border(blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  div{
+    font-size: 50px;
+  }
+  
+  * {
+    padding: 5%;
+  }
+}
+
+.logo img {
+  height: 180px;
+}
+
+.nav-logo-right{
+  position: absolute;
+  top: 50px;
+}
+
+
+.nav-title{
+  font-size: 2rem;
+  @include center;
+}
+
+.nav-under-title{
+  @include center;
+  flex-direction: column;
+}
+
+.main-ctn {
+  @include border(brown);
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.img-ctn{
+  display: flex;
+  flex-direction: column;
+  @include border(cyan);
+
+
+  img{
+    border: solid 4px black;
+    padding: 5%;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+  }
+}
+
+.main-img-1{
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.main-img-2{
+  margin-top: -15px;
+  margin-bottom: -15px;
+  align-self: flex-start;
+  z-index: 2;
+}
+
+.main-img-3{
+  align-self: flex-end;
+  z-index: 3;
+}
+
+.content-ctn{
+  @include border(orange);
+  padding: 0 10%;
+}
+
+.content-title{
+  h3 {
+    margin: 10% 0;
+    font-size: 3rem;
+  }
+  p {
+    padding: 7% 0;
+    font-size: 0.8rem;
+  }
+}
+
+.content-para{
+  margin: 10% 0;
+}
+
+.btn-redirection{
+  @include border(red);
+  background-color: yellow;
+  padding: 15px 20px;
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  img{
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 481px){
+  .nav-ctn{
+    height: 65vh;
+  }
+
+  .article-1{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .img-ctn{
+    flex: 1;
+  }
+
+  .content-ctn{
+    flex: 1;
+  }
+
+}
