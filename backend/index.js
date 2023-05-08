@@ -1,3 +1,16 @@
+// const express = require("express");
+// require("dotenv").config();
+// const morganBody = require("morgan-body");
+// const morgan = require("morgan");
+// const cors = require("cors");
+
+// const app = express();
+
+// const port = 8000;
+
+// app.listen(port, () => {
+//   console.log(`Listening on port ${port}`);
+// });
 require("dotenv").config();
 
 const app = require("./src/app");
