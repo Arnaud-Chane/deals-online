@@ -1,0 +1,12 @@
+@use 'variables' as *;
+@use 'placeholder' as *;
+@use 'mixins' as *;
+@use 'components/home' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
