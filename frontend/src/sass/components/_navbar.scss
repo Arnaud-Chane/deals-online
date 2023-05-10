@@ -1,0 +1,25 @@
+@use "../mixins" as *;
+
+.Navbar {
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: black;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 50px;
+  filter: invert(1);
+}
+
+.nav-profile img {
+  @include logo;
+}
